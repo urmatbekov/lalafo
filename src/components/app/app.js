@@ -1,15 +1,17 @@
 import React, {Component} from 'react';
 import Header from "../header";
 import Main from "../main";
+import {Container} from "react-bootstrap";
+import './app.css'
 
 class App extends Component {
     render() {
         return (
-            <div>
-                <div className="container">
+            <div className="parent-container">
+                <Container>
                     <Header/>
                     <Main/>
-                </div>
+                </Container>
             </div>
         );
     }
