@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fe9013b6-9843-42c3-9ca9-d4a33e439752" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/app/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/products/products-item/products-item.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/products/products.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/products/products-item/products-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/products/products-item/products-item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/products/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/products/products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="start" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="424" y="163" width="1071" height="720" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603983863471">
+      <screen x="0" y="0" width="1920" height="1020" />
+    </state>
+    <state x="424" y="163" width="1071" height="720" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1020@0.0.1920.1020" timestamp="1603983863471" />
+  </component>
+</project>
