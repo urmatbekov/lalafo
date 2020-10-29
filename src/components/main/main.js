@@ -5,7 +5,7 @@ class Main extends Component {
     render() {
         return (
             <main>
-                <h1>Lalafo</h1>
+                <h1 className="text-center">Lalafo</h1>
                 <Products/>
             </main>
         );

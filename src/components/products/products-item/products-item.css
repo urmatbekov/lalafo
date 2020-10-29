@@ -1,0 +1,8 @@
+.product-item {
+    box-shadow: 1px 1px 3px 1px lightgrey;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+.buy-button {
+    float: right;
+}
