@@ -20,7 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe9013b6-9843-42c3-9ca9-d4a33e439752" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/add-form/add-form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/add-form/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/products/data.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/products/products-item/products-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/products/products-item/products-item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/products/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/products/products.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +36,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1jYbn4kolzWWpx82mbNAp8fN71Q" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -39,7 +47,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Nurik" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -82,6 +93,10 @@
       <screen x="0" y="0" width="1920" height="1020" />
     </state>
     <state x="424" y="163" width="1071" height="720" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1020@0.0.1920.1020" timestamp="1603983863471" />
+    <state x="575" y="275" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604150494251">
+      <screen x="0" y="0" width="1920" height="1033" />
+    </state>
+    <state x="575" y="275" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1033/0.0.1920.1033@0.0.1920.1033" timestamp="1604150494251" />
     <state x="743" y="268" width="424" height="494" key="FileChooserDialogImpl" timestamp="1603984147501">
       <screen x="0" y="0" width="1920" height="1020" />
     </state>

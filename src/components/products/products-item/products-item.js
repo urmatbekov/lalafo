@@ -2,13 +2,9 @@ import React, {Component} from 'react';
 import "./products-item.css"
 
 class ProductsItem extends Component {
-    state = {
-        image: '/img/televizor.jpg',
-        price: 200,
-        title: "Televizor"
-    }
+
     render() {
-        const {title, image, price}= this.state;
+        const {title, image, price} = this.props;
         return (
             <div className="col-md-4">
                 <li className="product-item">
