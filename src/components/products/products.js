@@ -4,6 +4,7 @@ import './products.css'
 import {DataConsumer} from "../data-container/provider";
 
 class Products extends Component {
+
     render() {
         return (
             <section>
@@ -13,7 +14,7 @@ class Products extends Component {
                         {
                             ({data}) => {
                                 return data.map((item) => (
-                                    <ProductsItem key={item.id} {...item}/>
+                                    <ProductsItem  key={item.id} {...item}/>
                                 ))
                             }
                         }
