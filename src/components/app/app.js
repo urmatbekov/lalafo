@@ -13,12 +13,7 @@ import {DataConsumer} from "../data-container/provider";
 import ProductsItem from "../products/products-item";
 
 class App extends Component {
-    deleteProduct = (item) => {
-        this.setState(({data}) => {
-            const index = data.findIndex((item) => item.id===id)
-            return {data: [...data,slice(0, index), ...data.slice(index+1)]}
-        })
-    }
+
     render() {
         return (
             <Router>
@@ -26,16 +21,18 @@ class App extends Component {
                     <Container>
                         <Header/>
                         <Switch>
-                            <Route exact path={'/products/products-item'}>
+                            <Route exact path={'/'}>
                                 <Main/>
-                                <DataConsumer>
-                                    {({deleteProduct}) => <ProductsItem deleteProduct={this.deleteProduct}/>}
-                                </DataConsumer>
                             </Route>
                             <Route exact path={'/add'}>
                                 <DataConsumer>
                                     {({addProduct}) => <AddForm addProduct={addProduct}/>}
 
+                                </DataConsumer>
+                            </Route>
+                            <Route>
+                                <DataConsumer>
+                                    {({deleteProduct}) => <ProductsItem deleteProduct={deleteProduct}/>}
                                 </DataConsumer>
                             </Route>
                         </Switch>
