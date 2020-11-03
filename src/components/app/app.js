@@ -27,12 +27,6 @@ class App extends Component {
                             <Route exact path={'/add'}>
                                 <DataConsumer>
                                     {({addProduct}) => <AddForm addProduct={addProduct}/>}
-
-                                </DataConsumer>
-                            </Route>
-                            <Route>
-                                <DataConsumer>
-                                    {({deleteProduct}) => <ProductsItem deleteProduct={deleteProduct}/>}
                                 </DataConsumer>
                             </Route>
                         </Switch>

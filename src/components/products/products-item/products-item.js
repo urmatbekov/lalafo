@@ -3,7 +3,7 @@ import "./products-item.css"
 
 class ProductsItem extends Component {
     render() {
-        const {title, image, price} = this.props;
+        const {title, image, price, deleteProduct} = this.props;
         return (
             <div className="col-md-4">
                 <li className="product-item">
@@ -12,7 +12,7 @@ class ProductsItem extends Component {
                     <p>Price: <span>{price}$</span>
                         <button className="btn btn-danger buy-button">Купить</button>
                     </p>
-                    <button className='btn btn-danger'>x</button>
+                    <button onClick={deleteProduct} className='btn btn-danger'>x</button>
                 </li>
             </div>
         );

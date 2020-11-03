@@ -17,10 +17,9 @@ class DataContainer extends Component {
     deleteProduct = (id) => {
         this.setState(({data}) => {
             const index = data.findIndex((item) => item.id === id)
-            return {data: [...data, slice(0, index), ...data.slice(index + 1)]}
+            return {data: [...data.slice(0, index), ...data.slice(index + 1)]}
         })
     }
-
 
     render() {
         const {data} = this.state
