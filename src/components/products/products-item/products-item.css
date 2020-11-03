@@ -3,6 +3,9 @@
     margin-bottom: 30px;
     padding: 20px;
 }
-.buy-button {
+.buy-button, .delete-button {
     float: right;
+}
+.delete-button {
+    margin-left: 15px;
 }

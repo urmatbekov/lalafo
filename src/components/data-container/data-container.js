@@ -5,6 +5,7 @@ import {DataProvider} from "./provider";
 class DataContainer extends Component {
     state = {
         data
+
     }
     startId = 100;
     addProduct = (item) => {
@@ -17,6 +18,9 @@ class DataContainer extends Component {
     deleteProduct = (id) => {
         this.setState(({data}) => {
             const index = data.findIndex((item) => item.id === id)
+            if (index === -1) {
+                return {}
+            }
             return {data: [...data.slice(0, index), ...data.slice(index + 1)]}
         })
     }

@@ -10,9 +10,11 @@ class ProductsItem extends Component {
                     <h3>{title}</h3>
                     <img src={image} alt={""}/>
                     <p>Price: <span>{price}$</span>
+                        <button onClick={()=> deleteProduct(this.props.id)} className='btn btn-danger delete-button'>x</button>
                         <button className="btn btn-danger buy-button">Купить</button>
+
                     </p>
-                    <button onClick={deleteProduct} className='btn btn-danger'>x</button>
+
                 </li>
             </div>
         );
