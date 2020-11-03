@@ -1,9 +1,10 @@
-import React, {Component, Fragment} from 'react';
+import React, {Component} from 'react';
 import ProductsItem from "./products-item";
 import './products.css'
 import {DataConsumer} from "../data-container/provider";
 
 class Products extends Component {
+
     render() {
         return (
             <section>
@@ -11,9 +12,9 @@ class Products extends Component {
                 <ul className="row products">
                     <DataConsumer>
                         {
-                            ({data}) => {
+                            ({data, deleteProduct}) => {
                                 return data.map((item) => (
-                                    <ProductsItem key={item.id} {...item}/>
+                                    <ProductsItem deleteProduct={deleteProduct}  key={item.id} {...item}/>
                                 ))
                             }
                         }
