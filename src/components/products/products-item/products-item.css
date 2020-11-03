@@ -3,9 +3,23 @@
     margin-bottom: 30px;
     padding: 20px;
 }
+<<<<<<< HEAD
 .buy-button, .delete-button {
     float: right;
 }
 .delete-button {
     margin-left: 15px;
+=======
+.buy-button,.delete-button {
+    float: right;
+}
+
+.delete-button {
+    margin-left: 10px;
+}
+.product-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+>>>>>>> 998d3562888d797350f5cab8786778c019ddfee3
 }
