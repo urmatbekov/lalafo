@@ -10,7 +10,6 @@ import {
 } from "react-router-dom";
 import AddForm from "../add-form";
 import {DataConsumer} from "../data-container/provider";
-import ProductsItem from "../products/products-item";
 
 class App extends Component {
 

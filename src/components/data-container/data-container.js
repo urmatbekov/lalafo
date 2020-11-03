@@ -1,10 +1,9 @@
 import React, {Component} from 'react';
-import data from "../products/data";
 import {DataProvider} from "./provider";
 
 class DataContainer extends Component {
     state = {
-        data
+        data:[]
     }
     startId = 100;
     addProduct = (item) => {
@@ -17,7 +16,18 @@ class DataContainer extends Component {
     deleteProduct = (id) => {
         this.setState(({data}) => {
             const index = data.findIndex((item) => item.id === id)
+            if (index === -1){
+                return {}
+            }
             return {data: [...data.slice(0, index), ...data.slice(index + 1)]}
+        })
+    }
+
+    componentDidMount() {
+        fetch('https://nurkadyr.pythonanywhere.com/product/').then((res)=>{
+            return res.json()
+        }).then((data)=>{
+            this.setState({data:data.results})
         })
     }
 

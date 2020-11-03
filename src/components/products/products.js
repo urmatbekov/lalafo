@@ -1,4 +1,4 @@
-import React, {Component, Fragment} from 'react';
+import React, {Component} from 'react';
 import ProductsItem from "./products-item";
 import './products.css'
 import {DataConsumer} from "../data-container/provider";

@@ -23,6 +23,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/data-container/data-container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/data-container/data-container.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/products/products-item/products-item.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/products/products-item/products-item.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/products/products-item/products-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/products/products-item/products-item.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/products/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/products/products.js" afterDir="false" />
     </list>
