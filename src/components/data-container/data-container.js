@@ -14,11 +14,19 @@ class DataContainer extends Component {
         })
     }
 
+    deleteProduct = (id) => {
+        this.setState(({data}) => {
+            const index = data.findIndex((item) => item.id === id)
+            return {data: [...data.slice(0, index), ...data.slice(index + 1)]}
+        })
+    }
+
     render() {
         const {data} = this.state
+        const deleteProduct = this.deleteProduct
         const addProduct = this.addProduct
         return (
-            <DataProvider value={{data, addProduct}}>
+            <DataProvider value={{data, addProduct, deleteProduct}}>
                 {this.props.children}
             </DataProvider>
         );

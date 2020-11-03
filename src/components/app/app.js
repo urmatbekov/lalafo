@@ -9,10 +9,11 @@ import {
     Switch,
 } from "react-router-dom";
 import AddForm from "../add-form";
-import DataContainer from "../data-container/data-container";
 import {DataConsumer} from "../data-container/provider";
+import ProductsItem from "../products/products-item";
 
 class App extends Component {
+
     render() {
         return (
             <Router>
