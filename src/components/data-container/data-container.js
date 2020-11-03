@@ -3,12 +3,7 @@ import {DataProvider} from "./provider";
 
 class DataContainer extends Component {
     state = {
-<<<<<<< HEAD
-        data
-
-=======
         data:[]
->>>>>>> 998d3562888d797350f5cab8786778c019ddfee3
     }
     startId = 100;
     addProduct = (item) => {
@@ -21,11 +16,8 @@ class DataContainer extends Component {
     deleteProduct = (id) => {
         this.setState(({data}) => {
             const index = data.findIndex((item) => item.id === id)
-<<<<<<< HEAD
-            if (index === -1) {
-=======
+
             if (index === -1){
->>>>>>> 998d3562888d797350f5cab8786778c019ddfee3
                 return {}
             }
             return {data: [...data.slice(0, index), ...data.slice(index + 1)]}
