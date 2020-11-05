@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import AddForm from "../add-form";
 import {DataConsumer} from "../data-container/provider";
+import ProductDetail from "../product-detail/product-detail";
 
 class App extends Component {
 
@@ -17,21 +18,22 @@ class App extends Component {
         return (
             <Router>
                 <div className="parent-container">
-                    <div className='blog'>
-                        <Container>
-                            <Header/>
-                            <Switch>
-                                <Route exact path={'/'}>
-                                    <Main/>
-                                </Route>
-                                <Route exact path={'/add'}>
-                                    <DataConsumer>
-                                        {({addProduct}) => <AddForm addProduct={addProduct}/>}
-                                    </DataConsumer>
-                                </Route>
-                            </Switch>
-                        </Container>
-                    </div>
+                    <Container>
+                        <Header/>
+                        <Switch>
+                            <Route exact path={'/'}>
+                                <Main/>
+                            </Route>
+                            <Route exact path={'/add'}>
+                                <DataConsumer>
+                                    {({addProduct}) => <AddForm addProduct={addProduct}/>}
+                                </DataConsumer>
+                            </Route>
+                            <Route exact path="/product/:id">
+                                <ProductDetail/>
+                            </Route>
+                        </Switch>
+                    </Container>
                 </div>
             </Router>
         );

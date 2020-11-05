@@ -5,22 +5,14 @@ class AddForm extends Component {
 
     state = {
         title: '',
-        price: ''
+        price: '',
+        image: '',
     }
 
     onSubmit = (e) => {
         e.preventDefault()
-        const form = new FormData()
-        form.append('image', this.state.image)
-        form.append('title', this.state.title)
-        form.append('price', this.state.price)
-        fetch('https://nurkadyr.pythonanywhere.com/product/', {
-            method: 'POST',
-            body: form
-        }).then((res) => res.json()).then((data) => {
-            this.props.addProduct(data)
-            this.setState({title: '', price: ''})
-        })
+        this.props.addProduct(this.state)
+        this.setState({title: '', price: ''})
     }
 
     onChange = (e) => {
