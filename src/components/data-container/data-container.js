@@ -3,7 +3,8 @@ import {DataProvider} from "./provider";
 
 class DataContainer extends Component {
     state = {
-        data: []
+        data: [],
+        loading: true
     }
     addProduct = (item) => {
         const form = new FormData()
@@ -38,17 +39,22 @@ class DataContainer extends Component {
         fetch('https://nurkadyr.pythonanywhere.com/product/').then((res) => {
             return res.json()
         }).then((data) => {
-            this.setState({data: data.results})
+            this.setState({data: data.results,loading:false})
         })
     }
 
     render() {
-        const {data} = this.state
+        const {data,loading} = this.state
         const deleteProduct = this.deleteProduct
         const addProduct = this.addProduct
+        let content = null
+        if (!loading){
+            content = this.props.children
+        }
+
         return (
             <DataProvider value={{data, addProduct, deleteProduct}}>
-                {this.props.children}
+                {content}
             </DataProvider>
         );
     }
