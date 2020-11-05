@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
 import {DataProvider} from "./provider";
+import data from "./../products/data"
 
 class DataContainer extends Component {
     state = {
-        data:[]
+        data: []
     }
     startId = 100;
     addProduct = (item) => {

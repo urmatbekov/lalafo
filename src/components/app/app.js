@@ -17,19 +17,21 @@ class App extends Component {
         return (
             <Router>
                 <div className="parent-container">
-                    <Container>
-                        <Header/>
-                        <Switch>
-                            <Route exact path={'/'}>
-                                <Main/>
-                            </Route>
-                            <Route exact path={'/add'}>
-                                <DataConsumer>
-                                    {({addProduct}) => <AddForm addProduct={addProduct}/>}
-                                </DataConsumer>
-                            </Route>
-                        </Switch>
-                    </Container>
+                    <div className='blog'>
+                        <Container>
+                            <Header/>
+                            <Switch>
+                                <Route exact path={'/'}>
+                                    <Main/>
+                                </Route>
+                                <Route exact path={'/add'}>
+                                    <DataConsumer>
+                                        {({addProduct}) => <AddForm addProduct={addProduct}/>}
+                                    </DataConsumer>
+                                </Route>
+                            </Switch>
+                        </Container>
+                    </div>
                 </div>
             </Router>
         );
