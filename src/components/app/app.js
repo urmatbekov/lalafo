@@ -18,6 +18,7 @@ class App extends Component {
         return (
             <Router>
                 <div className="parent-container">
+                    <div className="body">
                     <Container>
                         <Header/>
                         <Switch>
@@ -34,6 +35,7 @@ class App extends Component {
                             </Route>
                         </Switch>
                     </Container>
+                </div>
                 </div>
             </Router>
         );
