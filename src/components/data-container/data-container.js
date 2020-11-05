@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {DataProvider} from "./provider";
-import data from "./../products/data"
 
 class DataContainer extends Component {
     state = {
@@ -10,15 +9,14 @@ class DataContainer extends Component {
     addProduct = (item) => {
         this.startId += 1
         this.setState(({data}) => {
-            return {data: [...data, {...item, id: this.startId, image: '/img/televizor.jpg',}]}
+            return {data: [...data, {...item}]}
         })
     }
 
     deleteProduct = (id) => {
         this.setState(({data}) => {
             const index = data.findIndex((item) => item.id === id)
-
-            if (index === -1){
+            if (index === -1) {
                 return {}
             }
             return {data: [...data.slice(0, index), ...data.slice(index + 1)]}
@@ -26,10 +24,10 @@ class DataContainer extends Component {
     }
 
     componentDidMount() {
-        fetch('https://nurkadyr.pythonanywhere.com/product/').then((res)=>{
+        fetch('https://nurkadyr.pythonanywhere.com/product/').then((res) => {
             return res.json()
-        }).then((data)=>{
-            this.setState({data:data.results})
+        }).then((data) => {
+            this.setState({data: data.results})
         })
     }
 
