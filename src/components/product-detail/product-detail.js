@@ -1,13 +1,12 @@
 import React, {Component} from 'react';
 import {withRouter} from "react-router-dom";
-import {DataConsumer} from "../data-container/provider";
+
 
 class ProductDetail extends Component {
     render() {
         const id = +this.props.match.params.id
         return (
             <div className="container">
-                <DataConsumer>
                     {
                         ({data}) => {
                             const item = data.find((item) => item.id === id)
@@ -20,7 +19,6 @@ class ProductDetail extends Component {
                             )
                         }
                     }
-                </DataConsumer>
             </div>
         );
     }
