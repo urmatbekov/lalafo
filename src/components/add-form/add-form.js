@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import {Button, Form} from "react-bootstrap";
+import {connect} from "react-redux";
+import {addProduct} from "../actions";
 
 class AddForm extends Component {
 
@@ -55,4 +57,8 @@ class AddForm extends Component {
     }
 }
 
-export default AddForm;
+const mapActionsToProps = (dispatch) => {
+    return {addProduct:addProduct(dispatch)}
+}
+
+export default connect(null,mapActionsToProps)(AddForm);
