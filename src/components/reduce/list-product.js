@@ -1,7 +1,7 @@
-const inState = {
-    data: [],
-    loading: true
-}
+import data from "../products/data";
+
+data
+
 const listProduct = (state = inState, action) => {
 
     switch (action.type) {

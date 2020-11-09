@@ -3,6 +3,10 @@
     margin-bottom: 30px;
     padding: 20px;
 }
+.buy-button, .delete-button {
+    float: right;
+}
+
 .buy-button,.delete-button {
     float: right;
 }

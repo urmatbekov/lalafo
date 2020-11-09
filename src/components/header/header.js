@@ -9,7 +9,7 @@ class Header extends Component {
             <header>
                 <Navbar fixed="top" bg="dark" variant="dark" expand="lg">
                     <Container>
-                        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+                        <Navbar.Brand href="#home">Lalafo</Navbar.Brand>
                         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav>
@@ -18,13 +18,13 @@ class Header extends Component {
                                         <NavLink className="nav-link" to="/">Home</NavLink>
                                     </i>
                                     <i className="nav-item">
-                                        <NavLink className="nav-link"  to="/add">add</NavLink>
+                                        <NavLink className="nav-link" to="/add">add</NavLink>
                                     </i>
                                     <i className="nav-item">
-                                        <NavLink className="nav-link"  to="/about">About</NavLink>
+                                        <NavLink className="nav-link" to="/about">About</NavLink>
                                     </i>
                                     <i className="nav-item">
-                                        <NavLink className="nav-link"  to="/contact">Contact</NavLink>
+                                        <NavLink className="nav-link" to="/contact">Contact</NavLink>
                                     </i>
                                 </ul>
                             </Nav>

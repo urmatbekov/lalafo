@@ -4,16 +4,22 @@ import {Link} from "react-router-dom";
 
 class ProductsItem extends Component {
     render() {
-        const {title, image, price,id, deleteProduct} = this.props;
+        const {name, height, mass, id, hair_color, skin_color, eye_color, birth_year, gender, deleteProduct} = this.props;
         return (
-                <li className="product-item col-md-4">
-                    <h3 className="product-title" title={title}>{title}</h3>
-                    <Link to={"/product/"+id}><img src={image} alt={""}/></Link>
-                    <p>Price: <span>{price}$</span>
-                        <button onClick={()=>deleteProduct(this.props.id)} className='btn btn-danger delete-button'>x</button>
-                        <button className="btn btn-danger buy-button">Купить</button>
-                    </p>
-                </li>
+            <li className="product-item col-md-4">
+                <h3 className="product-title" title={name}>{name}</h3>
+                <p>height: <span>{height}</span></p>
+                <p>mass: <span>{mass}</span></p>
+                <p>hair_color: <span>{hair_color}</span></p>
+                <p>skin_color: <span>{skin_color}</span></p>
+                <p>eye_color: <span>{eye_color}</span></p>
+                <p>birth_year: <span>{birth_year}</span></p>
+                <p>gender: <span>{gender}$</span></p>
+                <p>
+                    <button onClick={() => deleteProduct(this.props.id)} className='btn btn-danger delete-button'>x
+                    </button>
+                </p>
+            </li>
         );
     }
 }
