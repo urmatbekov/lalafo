@@ -1,11 +1,14 @@
 import React, {Component} from 'react';
 import {Button, Form} from "react-bootstrap";
+import {connect} from "react-redux";
+import {addProduct} from "../actions";
 
 class AddForm extends Component {
 
     state = {
         title: '',
-        price: ''
+        price: '',
+        image: '',
     }
 
     onSubmit = (e) => {
@@ -19,6 +22,11 @@ class AddForm extends Component {
             [e.target.name]: e.target.value
         })
     }
+    onChangeImage = (e) => {
+        this.setState({
+            [e.target.name]: e.target.files[0]
+        })
+    }
 
 
     render() {
@@ -30,7 +38,10 @@ class AddForm extends Component {
                         <Form.Label>Title</Form.Label>
                         <Form.Control value={this.state.title} onChange={this.onChange} type="text" name="title"/>
                     </Form.Group>
-
+                    <Form.Group controlId="formBasicImage">
+                        <Form.Label>Image</Form.Label>
+                        <Form.Control onChange={this.onChangeImage} type="file" name="image"/>
+                    </Form.Group>
                     <Form.Group controlId="formBasicPrice">
                         <Form.Label>Price</Form.Label>
                         <Form.Control value={this.state.price} onChange={this.onChange} type="number" name="price"/>
@@ -46,4 +57,8 @@ class AddForm extends Component {
     }
 }
 
-export default AddForm;
+const mapActionsToProps = (dispatch) => {
+    return {addProduct:addProduct(dispatch)}
+}
+
+export default connect(null,mapActionsToProps)(AddForm);

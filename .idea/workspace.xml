@@ -19,7 +19,26 @@
     <select />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="fe9013b6-9843-42c3-9ca9-d4a33e439752" name="Default Changelist" comment="" />
+=======
+    <list default="true" id="fe9013b6-9843-42c3-9ca9-d4a33e439752" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/reduce/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/reduce/list-product.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/add-form/add-form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/add-form/add-form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/data-container/data-container.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/data-container/provider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/products/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/products/products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+    </list>
+>>>>>>> 1c4fec02b80018059edc35dd11769a6c8aafc451
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,7 +58,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Nurik" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
@@ -66,8 +85,16 @@
       <option name="presentableId" value="Default" />
       <updated>1603984136190</updated>
       <workItem from="1603984137375" duration="12000" />
+      <workItem from="1604408974668" duration="652000" />
+      <workItem from="1604481069126" duration="200000" />
+      <workItem from="1604581620192" duration="6093000" />
+      <workItem from="1604654096626" duration="39000" />
+      <workItem from="1604754985686" duration="4947000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -90,34 +117,58 @@
       <screen x="0" y="0" width="1920" height="1033" />
     </state>
     <state x="575" y="275" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1033/0.0.1920.1033@0.0.1920.1033" timestamp="1604154784242" />
-    <state x="743" y="268" width="424" height="494" key="FileChooserDialogImpl" timestamp="1603984147501">
-      <screen x="0" y="0" width="1920" height="1020" />
+    <state x="743" y="271" width="516" height="501" key="FileChooserDialogImpl" timestamp="1604654134794">
+      <screen x="0" y="0" width="1920" height="1033" />
     </state>
     <state x="743" y="268" width="424" height="494" key="FileChooserDialogImpl/0.0.1920.1020@0.0.1920.1020" timestamp="1603984147501" />
+<<<<<<< HEAD
     <state width="1362" height="266" key="GridCell.Tab.0.bottom" timestamp="1604341711085">
       <screen x="0" y="0" width="1600" height="1160" />
+=======
+    <state x="743" y="271" width="516" height="501" key="FileChooserDialogImpl/0.0.1920.1033/0.0.1920.1033@0.0.1920.1033" timestamp="1604654134794" />
+    <state width="1885" height="237" key="GridCell.Tab.0.bottom" timestamp="1604759933904">
+      <screen x="0" y="0" width="1920" height="1033" />
+>>>>>>> 1c4fec02b80018059edc35dd11769a6c8aafc451
     </state>
     <state width="1362" height="266" key="GridCell.Tab.0.bottom/0.0.1600.1160@0.0.1600.1160" timestamp="1604341711085" />
     <state width="1897" height="264" key="GridCell.Tab.0.bottom/0.0.1920.1020@0.0.1920.1020" timestamp="1603984130061" />
+<<<<<<< HEAD
     <state width="1885" height="237" key="GridCell.Tab.0.bottom/0.0.1920.1033/0.0.1920.1033@0.0.1920.1033" timestamp="1604153303337" />
     <state width="1362" height="266" key="GridCell.Tab.0.center" timestamp="1604341711085">
       <screen x="0" y="0" width="1600" height="1160" />
+=======
+    <state width="1885" height="237" key="GridCell.Tab.0.bottom/0.0.1920.1033/0.0.1920.1033@0.0.1920.1033" timestamp="1604759933904" />
+    <state width="1885" height="237" key="GridCell.Tab.0.center" timestamp="1604759933904">
+      <screen x="0" y="0" width="1920" height="1033" />
+>>>>>>> 1c4fec02b80018059edc35dd11769a6c8aafc451
     </state>
     <state width="1362" height="266" key="GridCell.Tab.0.center/0.0.1600.1160@0.0.1600.1160" timestamp="1604341711085" />
     <state width="1897" height="264" key="GridCell.Tab.0.center/0.0.1920.1020@0.0.1920.1020" timestamp="1603984130061" />
+<<<<<<< HEAD
     <state width="1885" height="237" key="GridCell.Tab.0.center/0.0.1920.1033/0.0.1920.1033@0.0.1920.1033" timestamp="1604153303337" />
     <state width="1362" height="266" key="GridCell.Tab.0.left" timestamp="1604341711085">
       <screen x="0" y="0" width="1600" height="1160" />
+=======
+    <state width="1885" height="237" key="GridCell.Tab.0.center/0.0.1920.1033/0.0.1920.1033@0.0.1920.1033" timestamp="1604759933904" />
+    <state width="1885" height="237" key="GridCell.Tab.0.left" timestamp="1604759933904">
+      <screen x="0" y="0" width="1920" height="1033" />
+>>>>>>> 1c4fec02b80018059edc35dd11769a6c8aafc451
     </state>
     <state width="1362" height="266" key="GridCell.Tab.0.left/0.0.1600.1160@0.0.1600.1160" timestamp="1604341711085" />
     <state width="1897" height="264" key="GridCell.Tab.0.left/0.0.1920.1020@0.0.1920.1020" timestamp="1603984130060" />
+<<<<<<< HEAD
     <state width="1885" height="237" key="GridCell.Tab.0.left/0.0.1920.1033/0.0.1920.1033@0.0.1920.1033" timestamp="1604153303337" />
     <state width="1362" height="266" key="GridCell.Tab.0.right" timestamp="1604341711085">
       <screen x="0" y="0" width="1600" height="1160" />
+=======
+    <state width="1885" height="237" key="GridCell.Tab.0.left/0.0.1920.1033/0.0.1920.1033@0.0.1920.1033" timestamp="1604759933904" />
+    <state width="1885" height="237" key="GridCell.Tab.0.right" timestamp="1604759933904">
+      <screen x="0" y="0" width="1920" height="1033" />
+>>>>>>> 1c4fec02b80018059edc35dd11769a6c8aafc451
     </state>
     <state width="1362" height="266" key="GridCell.Tab.0.right/0.0.1600.1160@0.0.1600.1160" timestamp="1604341711085" />
     <state width="1897" height="264" key="GridCell.Tab.0.right/0.0.1920.1020@0.0.1920.1020" timestamp="1603984130061" />
-    <state width="1885" height="237" key="GridCell.Tab.0.right/0.0.1920.1033/0.0.1920.1033@0.0.1920.1033" timestamp="1604153303337" />
+    <state width="1885" height="237" key="GridCell.Tab.0.right/0.0.1920.1033/0.0.1920.1033@0.0.1920.1033" timestamp="1604759933904" />
     <state x="538" y="108" width="844" height="816" key="find.popup" timestamp="1604153970178">
       <screen x="0" y="0" width="1920" height="1033" />
     </state>

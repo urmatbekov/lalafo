@@ -9,10 +9,12 @@ import {
     Switch,
 } from "react-router-dom";
 import AddForm from "../add-form";
-import {DataConsumer} from "../data-container/provider";
-import ProductsItem from "../products/products-item";
+import ProductDetail from "../product-detail/product-detail";
+
 
 class App extends Component {
+
+
 
     render() {
         return (
@@ -25,15 +27,10 @@ class App extends Component {
                                 <Main/>
                             </Route>
                             <Route exact path={'/add'}>
-                                <DataConsumer>
-                                    {({addProduct}) => <AddForm addProduct={addProduct}/>}
-
-                                </DataConsumer>
+                                <AddForm/>
                             </Route>
-                            <Route>
-                                <DataConsumer>
-                                    {({deleteProduct}) => <ProductsItem deleteProduct={deleteProduct}/>}
-                                </DataConsumer>
+                            <Route exact path="/product/:id">
+                                <ProductDetail/>
                             </Route>
                         </Switch>
                     </Container>
@@ -42,5 +39,7 @@ class App extends Component {
         );
     }
 }
+
+
 
 export default App;
