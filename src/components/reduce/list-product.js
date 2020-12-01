@@ -1,8 +1,8 @@
-const inState = {
-    data: [],
-    loading: true
+const initialState = {
+    data:[]
 }
-const listProduct = (state = inState, action) => {
+
+const listProduct = (state = initialState, action) => {
 
     switch (action.type) {
         case "LOAD" : {
