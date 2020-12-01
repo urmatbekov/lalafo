@@ -1,5 +1,8 @@
 const initialState = {
-    data:[]
+    data: {
+        count: 0,
+        results: []
+    }
 }
 
 const listProduct = (state = initialState, action) => {

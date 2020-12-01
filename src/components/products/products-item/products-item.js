@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import "./products-item.css"
-import {Link} from "react-router-dom";
+
 
 class ProductsItem extends Component {
     render() {
-        const {name, height, mass, id, hair_color, skin_color, eye_color, birth_year, gender, deleteProduct} = this.props;
+        const {name, height, mass, hair_color, skin_color, eye_color, birth_year, gender, deleteProduct} = this.props;
         return (
             <li className="product-item col-md-4">
                 <h3 className="product-title" title={name}>{name}</h3>
