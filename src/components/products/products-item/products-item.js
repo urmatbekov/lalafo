@@ -1,24 +1,27 @@
 import React, {Component} from 'react';
 import "./products-item.css"
+import {Link} from "react-router-dom";
 
 
 class ProductsItem extends Component {
     render() {
-        const {name, height, mass, hair_color, skin_color, eye_color, birth_year, gender, deleteProduct} = this.props;
+        const {name,url, height, mass, hair_color, skin_color, eye_color, birth_year, gender, deleteProduct} = this.props;
         return (
             <li className="product-item col-md-4">
-                <h3 className="product-title" title={name}>{name}</h3>
-                <p>height: <span>{height}</span></p>
-                <p>mass: <span>{mass}</span></p>
-                <p>hair_color: <span>{hair_color}</span></p>
-                <p>skin_color: <span>{skin_color}</span></p>
-                <p>eye_color: <span>{eye_color}</span></p>
-                <p>birth_year: <span>{birth_year}</span></p>
-                <p>gender: <span>{gender}$</span></p>
-                <p>
-                    <button onClick={() => deleteProduct(this.props.id)} className='btn btn-danger delete-button'>x
-                    </button>
-                </p>
+                <Link to={`product/${name}?url=`+url}>
+                    <h3 className="product-title" title={name}>{name}</h3>
+                    <p>height: <span>{height}</span></p>
+                    <p>mass: <span>{mass}</span></p>
+                    <p>hair_color: <span>{hair_color}</span></p>
+                    <p>skin_color: <span>{skin_color}</span></p>
+                    <p>eye_color: <span>{eye_color}</span></p>
+                    <p>birth_year: <span>{birth_year}</span></p>
+                    <p>gender: <span>{gender}$</span></p>
+                    <p>
+                        <button onClick={() => deleteProduct(this.props.id)} className='btn btn-danger delete-button'>x
+                        </button>
+                    </p>
+                </Link>
             </li>
         );
     }

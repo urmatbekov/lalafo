@@ -3,18 +3,23 @@ import {withRouter} from "react-router-dom";
 import {connect} from "react-redux";
 
 class ProductDetail extends Component {
+    state = {
+        item:{}
+    }
+    componentDidMount() {
+
+        const url = (new URLSearchParams(this.props.location.search)).get("url")
+        fetch(url).then((res)=>res.json()).then((data)=>{
+            this.setState({item:data})
+            }
+        )
+    }
+
     render() {
-        const name = this.props.match.params.name
-        const item = this.props.data.results.find((item) => item.name === name)
-        console.log(name)
-        console.log(item)
-        if (!item){
-            return ""
-        }
         return (
             <div className="container">
                 <div>
-                    <h1>{item.title}</h1>
+                    <h1>{this.state.item.name}</h1>
                 </div>
             </div>
         );
