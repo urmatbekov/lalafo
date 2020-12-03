@@ -4,21 +4,18 @@ import {connect} from "react-redux";
 
 class ProductDetail extends Component {
     render() {
-        const id = +this.props.match.params.id
+        const name = this.props.match.params.name
+        const item = this.props.data.results.find((item) => item.name === name)
+        console.log(name)
+        console.log(item)
+        if (!item){
+            return ""
+        }
         return (
             <div className="container">
-                {
-                    ({data}) => {
-                        const item = data.find((item) => item.id === id)
-                        return (
-                            <div>
-                                <h1>{item.title}</h1>
-                                <img style={{width: '400px'}} src={item.image} alt=""/>
-                                <p>{item.price} $</p>
-                            </div>
-                        )
-                    }
-                }
+                <div>
+                    <h1>{item.title}</h1>
+                </div>
             </div>
         );
     }

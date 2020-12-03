@@ -29,7 +29,7 @@ class App extends Component {
                             <Route exact path={'/add'}>
                                 <AddForm/>
                             </Route>
-                            <Route exact path="/product/:id">
+                            <Route exact path="/product/:name">
                                 <ProductDetail/>
                             </Route>
                         </Switch>
