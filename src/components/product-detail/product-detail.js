@@ -7,12 +7,6 @@ class ProductDetail extends Component {
         const id = +this.props.match.params.id
         return (
             <div className="container">
-
-                <div>
-                    <h1>{item.title}</h1>
-                    <img style={{width: '400px'}} src={item.image} alt=""/>
-                    <p>{item.price} $</p>
-                </div>
                 {
                     ({data}) => {
                         const item = data.find((item) => item.id === id)
