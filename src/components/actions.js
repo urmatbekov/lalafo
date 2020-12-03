@@ -22,9 +22,9 @@ const addItem = (item) => {
     }
 }
 
-const getProduct = (dispatch) => () => {
-    service.getProducts().then((data) => {
-        dispatch(loadProduct(data.results))
+const getProduct = (dispatch) => (page) => {
+    service.getProducts(page).then((data) => {
+        dispatch(loadProduct(data))
     })
 }
 

@@ -3,20 +3,36 @@ import ProductsItem from "./products-item";
 import './products.css'
 import {connect} from "react-redux";
 import {deleteProduct, getProduct} from "../actions";
+import PaginationPeople from "../pagination/pagination";
 
 class Products extends Component {
     componentDidMount() {
-        this.props.getProduct()
+        this.getPage()
     }
+
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        if (prevProps.page !== this.props.page) {
+            this.getPage()
+        }
+    }
+
+    getPage = () => {
+        const {page} = this.props
+        this.props.getProduct(page)
+    }
+
+
     render() {
         return (
             <section>
                 <h2>Products</h2>
+                <PaginationPeople page={this.props.page} count={this.props.data.count}/>
                 <ul className="row products">
-                    {this.props.data.map((item) => (
-                        <ProductsItem key={item.id} {...item} deleteProduct={this.props.deleteProduct}/>
+                    {this.props.data.results.map((item) => (
+                        <ProductsItem key={item.name} {...item} deleteProduct={this.props.deleteProduct}/>
                     ))}
                 </ul>
+                <PaginationPeople page={this.props.page} count={this.props.data.count}/>
             </section>
         );
     }
@@ -28,10 +44,10 @@ const mapStateToProps = ({data}) => {
 
 const mapActionsToProps = (dispatch) => {
     return {
-        getProduct:getProduct(dispatch),
-        deleteProduct:deleteProduct(dispatch)
+        getProduct: getProduct(dispatch),
+        deleteProduct: deleteProduct(dispatch)
     }
 }
 
 
-export default connect(mapStateToProps,mapActionsToProps)(Products);
+export default connect(mapStateToProps, mapActionsToProps)(Products);

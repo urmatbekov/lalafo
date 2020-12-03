@@ -1,8 +1,8 @@
 class Service {
     BASE_URL = 'https://swapi.dev/api'
 
-    getProducts = () => {
-        return fetch(`${this.BASE_URL}/people/`).then((res) => res.json())
+    getProducts = (page=1) => {
+        return fetch(`${this.BASE_URL}/people/?page=`+page).then((res) => res.json())
     }
 
     addProduct = (item) => {
