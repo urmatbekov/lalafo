@@ -4,6 +4,7 @@ import './products.css'
 import {connect} from "react-redux";
 import {deleteProduct, getProduct} from "../actions";
 import PaginationPeople from "../pagination/pagination";
+import Locader from "../loader/locader";
 
 class Products extends Component {
     componentDidMount() {
@@ -23,23 +24,26 @@ class Products extends Component {
 
 
     render() {
+        const content = this.props.loading ? <Locader/> : (
+            <ul className="row products">
+                {this.props.data.results.map((item) => (
+                    <ProductsItem key={item.name} {...item} deleteProduct={this.props.deleteProduct}/>
+                ))}
+            </ul>
+        )
         return (
             <section>
                 <h2>Products</h2>
                 <PaginationPeople page={this.props.page} count={this.props.data.count}/>
-                <ul className="row products">
-                    {this.props.data.results.map((item) => (
-                        <ProductsItem key={item.name} {...item} deleteProduct={this.props.deleteProduct}/>
-                    ))}
-                </ul>
+                {content}
                 <PaginationPeople page={this.props.page} count={this.props.data.count}/>
             </section>
         );
     }
 }
 
-const mapStateToProps = ({data}) => {
-    return {data}
+const mapStateToProps = ({data, loading}) => {
+    return {data, loading}
 }
 
 const mapActionsToProps = (dispatch) => {

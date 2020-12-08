@@ -2,12 +2,16 @@ const initialState = {
     data: {
         count: 0,
         results: []
-    }
+    },
+    loading: false
 }
 
 const listProduct = (state = initialState, action) => {
 
     switch (action.type) {
+        case "SET_REQUEST": {
+            return {...state, loading: true}
+        }
         case "LOAD" : {
             return {data: action.payload, loading: false}
         }

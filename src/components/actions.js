@@ -8,6 +8,11 @@ const deleteItem = (id) => {
         payload: id
     }
 }
+const setRequest = () => {
+    return {
+        type: 'SET_REQUEST',
+    }
+}
 const loadProduct = (data) => {
     return {
         type: 'LOAD',
@@ -23,6 +28,7 @@ const addItem = (item) => {
 }
 
 const getProduct = (dispatch) => (page) => {
+    dispatch(setRequest())
     service.getProducts(page).then((data) => {
         dispatch(loadProduct(data))
     })
@@ -40,4 +46,4 @@ const addProduct =(dispatch)=> (item) => {
     })
 }
 
-export {getProduct,deleteProduct,addProduct}
+export {getProduct,deleteProduct,addProduct,setRequest}
