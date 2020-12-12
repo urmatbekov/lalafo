@@ -42,7 +42,7 @@ class Products extends Component {
     }
 }
 
-const mapStateToProps = ({data, loading}) => {
+const mapStateToProps = ({listProduct: {data, loading}}) => {
     return {data, loading}
 }
 

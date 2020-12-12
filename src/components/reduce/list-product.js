@@ -29,18 +29,6 @@ const listProduct = (state = initialState, action) => {
             return state
         }
     }
-
-
-    //
-    // if (action.type === "LOAD") {
-    //     return {data: action.data, loading: false}
-    // } else if (action.type === "DELETE") {
-    //     const index = state.data.findIndex((item) => item.id === action.id)
-    //     if (index === -1) {
-    //         return {...state}
-    //     }
-    //     return {data: [...state.data.slice(0, index), ...state.data.slice(index + 1)]}
-    // }
 }
 
 export default listProduct

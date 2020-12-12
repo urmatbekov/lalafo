@@ -1,6 +1,7 @@
 import {createStore} from 'redux'
-import listProduct from "./reduce/list-product";
+import reduce from "./reduce";
 
-const store = createStore(listProduct)
+
+const store = createStore(reduce)
 
 export default store;
